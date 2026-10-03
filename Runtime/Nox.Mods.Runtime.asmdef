@@ -1,0 +1,22 @@
+{
+  "name": "Nox.Mods.Runtime",
+  "rootNamespace": "",
+  "references": [
+    "Nox.CCK",
+    "UniTask",
+    "Nox.Mods",
+    "Nox.Network",
+    "Nox.CCK.Network",
+    "Nox.Search",
+    "Nox.CCK.Search"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

@@ -1,0 +1,6 @@
+{
+    "name":  "nox.mods",
+    "displayName":  "Nox - Mods",
+    "version":  "1.0.0",
+    "description":  "Mods API and mod search for Nox, built on the generic asset pipeline."
+}

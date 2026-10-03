@@ -1,0 +1,73 @@
+{
+  "type": "mod",
+  "id": "nox.mods",
+  "provides": [
+    "fr.hactazia.sdk.mods",
+    "mods"
+  ],
+  "name": "Mods",
+  "version": "1.0.x",
+  "description": "Provides the Mods API and searches mods on the asset pipeline.",
+  "license": "GPL-3.0",
+  "icon": null,
+  "contact": {
+    "email": "hactazia@gmail.com",
+    "source": "https://github.com/AtelierVR/nox.mods",
+    "website": "https://nox.hactazia.fr/",
+    "issues": "https://github.com/AtelierVR/nox.mods/issues"
+  },
+  "authors": [
+    {
+      "name": "Hactazia",
+      "email": "hactazia@gmail.com",
+      "website": "https://hactazia.fr/"
+    }
+  ],
+  "relations": [
+    {
+      "id": "nox.cck",
+      "type": "depends",
+      "version": ">=1.0.0",
+      "register": "git+https://github.com/AtelierVR/nox.cck.git"
+    },
+    {
+      "id": "network",
+      "type": "depends",
+      "version": ">=1.0.0",
+      "register": "git+https://github.com/AtelierVR/nox.network.git"
+    },
+    {
+      "id": "search",
+      "type": "depends",
+      "version": ">=1.0.0",
+      "register": "git+https://github.com/AtelierVR/nox.search.git"
+    },
+    {
+      "id": "ui",
+      "type": "depends",
+      "version": ">=1.0.0",
+      "register": "git+https://github.com/AtelierVR/nox.ui.git"
+    },
+    {
+      "id": "com.cysharp.unitask",
+      "type": "depends",
+      "version": ">=2.0.0",
+      "register": "git+https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask"
+    }
+  ],
+  "constraints": [
+    {
+      "type": "after",
+      "id": "network"
+    },
+    {
+      "type": "after",
+      "id": "search"
+    }
+  ],
+  "entrypoints": {
+    "main": [
+      "Nox.Mods.Runtime.Main"
+    ]
+  }
+}
