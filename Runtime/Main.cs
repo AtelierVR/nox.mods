@@ -20,9 +20,11 @@ namespace Nox.Mods.Runtime {
 
 		/// <summary>Generic asset pipeline, shared with every other asset type.</summary>
 		public static IAssetsAPI AssetsAPI
-			=> Instance?.CoreAPI.ModAPI
-				.GetMod("network")
-				?.GetInstance<IAssetsAPI>();
+			=> Instance == null
+				? null
+				: Instance.CoreAPI.ModAPI
+					.GetMod("network")
+					?.GetInstance<IAssetsAPI>();
 
 		static internal ISearchAPI SearchAPI
 			=> Instance.CoreAPI.ModAPI
